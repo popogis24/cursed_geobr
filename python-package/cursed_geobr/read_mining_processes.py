@@ -5,7 +5,7 @@ import requests
 from zipfile import ZipFile
 from io import BytesIO
 
-def read_mining_processes(simplified=True):
+def read_mining_processes(simplified=False):
     """Download official mining process data from ANM (National Mining Agency).
     
     This function downloads and processes mining permit data from Brazil's National Mining Agency (ANM).

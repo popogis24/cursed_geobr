@@ -29,3 +29,10 @@ from .read_comparable_areas import read_comparable_areas
 from .read_biomes import read_biomes
 from .read_statistical_grid import read_statistical_grid
 from .read_mining_processes import read_mining_processes
+from .read_geology import read_geology
+from .read_geomorphology import read_geomorphology
+from .read_pedology import read_pedology
+from .read_climate_aggressiveness import read_climate_aggressiveness
+from .read_amazon_ibas import read_amazon_ibas
+from .read_atlantic_forest_ibas import read_atlantic_forest_ibas
+from .read_settlements import read_settlements
