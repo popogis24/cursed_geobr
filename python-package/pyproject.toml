@@ -1,15 +1,12 @@
 [project]
-name = "geobr"
-version = "0.2.2"
-description = "geobr: Download Official Spatial Data Sets of Brazil"
+name = "cursed_geobr"
+version = "0.1.3"
+description = "Fork personalizado do geobr com funcionalidades extras como download de dados da ANM"
 readme = "README.md"
 requires-python = "<4.0,>=3.9"
 license = {text = "MIT"}
 authors = [
-    {name = "João Carabetta"},
-    {name = "Rafael H. M. Pereira"},
-    {name = "Caio Nogueira Goncalves"},
-    {name = "Bernardo Furtado"},
+    {name = "Anderson Stolfi"}
 ]
 dependencies = [
     "geopandas>=1.0.0,<=1.1",
@@ -17,6 +14,7 @@ dependencies = [
     "requests<3.0.0,>=2.25.1",
     "lxml<6.0.0,>=5.1.0",
     "html5lib==1.1",
+    "geobr>=0.2.2,<0.3.0",
 ]
 classifiers = [
     "Intended Audience :: Science/Research",
@@ -28,8 +26,8 @@ classifiers = [
 ]
 
 [project.urls]
-homepage = "https://github.com/ipeaGIT/geobr"
-repository = "https://github.com/ipeaGIT/geobr"
+homepage = "https://github.com/popogis24/cursed_geobr"
+repository = "https://github.com/popogis24/cursed_geobr"
 
 [build-system]
 requires = ["pdm-backend"]
@@ -37,7 +35,10 @@ build-backend = "pdm.backend"
 
 [tool.pdm.build]
 includes = [
-    "geobr",
+    "cursed_geobr",
+]
+excludes = [
+    "**/*.gpkg",
 ]
 
 [tool.black]
